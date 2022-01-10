@@ -1,0 +1,17 @@
+// const respeita o escopo de bloco
+
+// função de execução imediata
+(() => { 
+    const test = 'valor função'
+    console.log(`Valor dentro da função "${test}"`);
+    // valor função
+
+    if(true) {
+        const test = 'example';
+        console.log(`Valor dentro do if "${test}"`);
+        // valor if
+    }
+
+    console.log(`Valor após a execução do if "${test}"`);
+    // valor funcao
+})();
